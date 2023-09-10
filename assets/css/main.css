@@ -20,8 +20,8 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
-  --color-secondary: #52565e;
+  --color-primary: #ffd800;
+  --color-secondary: #bebfc5;
 }
 
 /* Smooth scroll behavior */
@@ -2036,7 +2036,7 @@ section {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   color: #fff;
   text-transform: uppercase;
   font-size: 13px;
