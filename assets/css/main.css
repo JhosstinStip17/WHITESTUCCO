@@ -2044,7 +2044,7 @@ section {
   font-weight: 500;
 }
 
-/*inici estrellas */
+/*inicio estrellas */
 .rating:not(:checked) > input {
   position: absolute;
   appearance: none;
@@ -2054,7 +2054,7 @@ section {
   float: right;
   cursor: pointer;
   font-size: 30px;
-  color: #666;
+  color: var(--color-primary);
 }
 
 .rating:not(:checked) > label:before {
