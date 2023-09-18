@@ -211,3 +211,29 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+
+/**
+ * js login
+ */
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const registerButton = document.getElementById("register-button");
+  const registerModal = document.getElementById("register-modal");
+  const closeButton = document.getElementById("close-button");
+
+  registerButton.addEventListener("click", function () {
+      registerModal.style.display = "block";
+  });
+
+  closeButton.addEventListener("click", function () {
+      registerModal.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+      if (event.target == registerModal) {
+          registerModal.style.display = "none";
+      }
+  });
+});

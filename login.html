@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" id="login-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body id="login-body">
+    <img class="logo" src="img/img-login/logo.png" alt="logo">
+    <div class="container" id="login-container">
+        <div class="left">
+            <img src="img/img-login/img-login.png" alt="Imagen login">
+        </div>
+        <div class="right" id="login-right">
+            <h1>Bienvenido</h1>
+            <form id="login-form">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+                <a href="#" id="forgot-password">¿Olvidaste tu contraseña?</a>
+
+                <button type="submit" id="login-button">Iniciar sesión</button>
+            </form>
+            
+            <button id="register-button">Registrarse</button>
+        </div>
+    </div>
+
+    <!-- Ventana emergente de registro -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-button">&times;</span>
+            <div class="left-column">
+                <h2>Registro</h2>
+                <form id="register-form">
+                    <label for="registro-correo">Correo:</label>
+                    <input type="email" id="registro-correo" name="registro-correo" required>
+
+                    <label for="registro-contrasena">Contraseña:</label>
+                    <input type="password" id="registro-contrasena" name="registro-contrasena" required>
+
+                    <label for="cedula">Cédula:</label>
+                    <input type="text" id="cedula" name="cedula" required>
+
+                    <label for="celular">Celular:</label>
+                    <input type="text" id="celular" name="celular" required>
+
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+
+                    <label for="rol">Rol:</label>
+                    <select id="rol" name="rol">
+                        <option value="normal">Usuario Normal</option>
+                        <option value="contratista">Contratista</option>
+                    </select>
+
+                </form>
+                <button type="submit" id="register-submit-button">Registrarse</button>
+            </div>
+            <div class="right-column">
+                <img class="logo2" src="img/img-login/logo.png" alt="logo">
+
+                <h2>Roles?</h2>
+                <div class="icon-container">
+                    <div class="icon" id="usuario-icon">
+                        <img src="img/img-login/usuarios.png" alt="Icono 1">
+                        <h3>Usuarios</h3>
+                        <p>El usuario es la persona que, al crear su perfil, tiene la capacidad de visualizar los precios aproximados de pinturas, estucos y cementos disponibles en el mercado, dependiendo de su tipo. Además, cuenta con acceso a una herramienta de conversión que, al ingresar los metros cuadrados de una pared, proporciona información sobre la cantidad de material necesario, ya sea pintura, estuco o pañete, así como una estimación del costo de la mano de obra requerida para la obra.</p>
+                    </div>
+                    <div class="icon" id="contratista-icon">
+                        <img src="img/img-login/trabajadores.png" alt="Icono 2">
+                        <h3>Contratista</h3>
+                        <p>El contratista, al crear su perfil, dispone de las mismas opciones que un usuario estándar. Sin embargo, este tiene la capacidad adicional de exhibir sus trabajos anteriores en su perfil, lo que permite a los usuarios explorar su historial laboral y así tener la oportunidad de conectarse con potenciales clientes para proyectos futuros.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
