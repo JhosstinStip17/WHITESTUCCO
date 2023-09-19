@@ -29,11 +29,10 @@ body#login-body {
   width: 100%;
 }
 
-.logo {
-  position: relative;
-  left: 200px;
-  bottom: 300px;
-}
+/* .logo {
+  /* left: 200px;
+  bottom: 300px; */
+} */
 
 .container#login-container {
   display: flex;
