@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /*CSS LOGIN*/
 :root {
-  --primary-color: #000000;
-  --secondary-color: #3cbfe7;
-  --text-color: #333;
+  --color-default: #000;
+  --color-primary: #FFD800;
+  --color-secondary: #BEBFC5;
 }
 
 body#login-body {
@@ -491,7 +491,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 45px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -2839,6 +2839,7 @@ section {
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
+  text-align: center;
 }
 
 .footer:before {
@@ -2871,6 +2872,11 @@ section {
   margin-bottom: 0;
   font-family: var(--font-primary);
   color: #fff;
+}
+
+.footer .footer-content .social-links{
+  display: flex;
+  justify-content: center;
 }
 
 .footer .footer-content .social-links a {
@@ -2941,4 +2947,59 @@ section {
 
 .footer .footer-legal .credits a {
   color: var(--color-primary);
+}
+
+/* Productos */
+
+#productos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f5f6f7;
+  opacity: 1;
+}
+
+#productos h3{
+  margin-bottom: 50px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+#productos h5{
+  text-align: center;
+  color: var(--color-primary);
+}
+
+#productos form{
+  text-align: left;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#productos img{
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  align-items: center;
+  width: 381px;
+  height: 350px;
+  /* padding: 20px; */
+  border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cotizador */
+
+#cotizador {
+  text-align: center;
+  
+}
+
+#cotizador .btn{
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: #6c757d;
 }
